@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Code Review</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>THE CODE REVIEW</h1>
+    </header>
+    <main>
+        <div class="first-paragraph">
+            <h2>Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+        </div>
+        <hr>
+        <form action="index.html" method="post" id="code-review" novalidate>
+            <fieldset>
+                <legend>Contact Information</legend>
+                        <div class="container">
+                            <label for="name">Full Name</label>
+                            <input id="name" name="name" placeholder="Required" type="text" required>
+                        </div>
+                        <div class="container">
+                            <label for="email">Email Address</label>
+                            <input id="email" name="email" placeholder="Required" type="email" required>
+                        </div>
+                        <div class="container">
+                            <label for="phone">Phone Number</label>
+                            <input id="phone" name="phone" placeholder="+4673xxxxxxx" type="tel">
+                        </div>
+                        <div class="container">
+                            <label for="street">Street Address</label>
+                            <input id="street" name="street" placeholder="i.e. Main Street 12" type="text">
+                        </div>
+                        <div class="container">
+                            <label for="city">City</label>
+                            <input id="city" name="city" placeholder="i.e. Stockholm" type="text">
+                        </div>
+                        <div class="container">
+                            <label for="state">State</label>
+                            <select id="state" name="state">
+                                <option value="" disabled selected>Choose State</option>
+                                <optgroup label="Mid">
+                                    <option value="Arkansas">Arkansas</option>
+                                    <option value="Iowa">Iowa</option>
+                                    <option value="Kansas">Kansas</option>
+                                    <option value="Louisiana">Louisiana</option>
+                                    <option value="Minnesota">Minnesota</option>
+                                    <option value="Mississippi">Mississippi</option>
+                                    <option value="Missouri">Missouri</option>
+                                    <option value="Oklahoma">Oklahoma</option>
+                                    <option value="Texas">Texas</option>
+                                </optgroup>
+                                <optgroup label="West">
+                                    <option value="California">California</option>
+                                    <option value="Nevada">Nevada</option>
+                                    <option value="Oregon">Oregon</option>
+                                </optgroup>
+                                <optgroup label="East">
+                                    <option value="Maine">Maine</option>
+                                    <option value="New Hampshire">New Hampshire</option>
+                                    <option value="Vermont">Vermont</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="container last-container">
+                            <label for="zip">Zip Code</label>
+                            <input id="zip" name="zip" placeholder="12345" type="text">
+                        </div>
+            </fieldset>
+            <hr>
+            <div class="newsletter">
+                <fieldset>
+                    <legend>Newsletter</legend>
+                        <div class="container-2">
+                            <label>Select the newsletters you would like to receive</label>
+                                <div class="checkboxes">
+                                    <input id="html-news" name="news" value="html-news" type="checkbox">
+                                    <label for="html-news">HTML News</label>
+                                </div>
+                                <div class="checkboxes">
+                                    <input id="css-news" name="news" value="css-news" type="checkbox">
+                                    <label for="css-news">CSS News</label>
+                                </div>
+                                <div class="checkboxes">
+                                    <input id="js-news" name="news" value="js-news" type="checkbox">
+                                    <label for="js-news">Javascript News</label>
+                                </div>
+                        </div>
+                        <div class="container-2">
+                            <label>Newsletter format</label>
+                                <div class="radiobuttons">
+                            <input id="html" name="format" value="html" type="radio">
+                            <label for="html">HTML</label>
+                                </div>
+                                <div class="radiobuttons">
+                            <input id="plain" name="format" value="plain" type="radio">
+                            <label for="plain">Plain text</label>
+                                </div>
+                                <div class="container-2">
+                            <label for="free-text">Other topics you'd like to hear about</label>
+                            <textarea id="free-text" name="freeText"></textarea>
+                                </div>
+                        </div>
+                </fieldset>
+            </div>
+            <div class="submit-button">
+                <input type="submit" value="Sign Up">
+            </div>
+        </form>
+        <p class="copyright">Copyright The Code Review</p>
+    </main>
+</body>
+</html>
